@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./assets/css/common.css">
+  </head>
+  <body>
+    <div class="top">
+      <!-- svg+vivusアニメーション-->
+      <div class="vivus-welcome" id="vivus-welcome"></div>
+      <div class="vivus-rocket" id="vivus-rocket"></div>
+      <div class="lottie" id="lottie"></div>
+      <div class="planet" id="planet"></div>
+      <main class="main" data-js="main">
+        <div class="main__block"><img class="main__image" src="./assets/image/pug.svg" alt="パグ"><img class="main__image" src="./assets/image/sass.svg" alt="サス"><a class="main__link">
+            <p class="main__text">研修1</p></a></div>
+        <div class="main__block"><img class="main__image" src="./assets/image/js.png" alt="js"><img class="main__image" src="./assets/image/jquery.svg" alt="jquery"><a class="main__link">
+            <p class="main__text">研修2</p></a></div>
+      </main>
+      <div class="opening">
+        <div class="opening__wrapper">
+          <div id="app">
+            <p class="opening__text">{{message1}}</p>
+            <p class="opening__text">{{message2}}</p>
+            <p class="opening__text">{{message3}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/lib/lib.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./assets/js/lib/vivus.js"></script>
+    <script src="./assets/js/lib/lottie.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/bounce.js"></script>
+    <script>
+      var app = new Vue({
+        el: "#app",
+        data() {
+          return {
+            message1: "時は大転職時代。新メンバーは困難なニジボックスの面接にリモートから奇襲を仕掛け転職の勝利を収めた。",
+            message2: "更にその入社後、PCの環境設定を終え研修に入り込むことに成功。それは「新人研修」と呼ばれ既メンバーも多くの学びを得られるパワーを持つシステムだった。",
+            message3: "様々な課題に追われながら1ヶ月に渡って新メンバーは研修で得た知見を手に座学講座へと急いだ。研修を終え、案件に参画するために…"
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

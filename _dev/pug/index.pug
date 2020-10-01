@@ -1,0 +1,46 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', href='./assets/css/common.css')
+  body
+    div.top
+      // svg+vivusアニメーション
+      div.vivus-welcome(id='vivus-welcome')
+      div.vivus-rocket(id='vivus-rocket')
+      div.lottie(id='lottie')
+      div.planet(id='planet')
+      main.main(data-js='main')
+        div.main__block
+          img.main__image(src='./assets/image/pug.svg', alt='パグ')
+          img.main__image(src='./assets/image/sass.svg', alt='サス')
+          a.main__link
+            p.main__text 研修1
+        div.main__block
+          img.main__image(src='./assets/image/js.png', alt='js')
+          img.main__image(src='./assets/image/jquery.svg', alt='jquery')
+          a.main__link
+            p.main__text 研修2
+
+      div.opening
+        div.opening__wrapper
+          div(id='app')
+            p.opening__text {{message1}}
+            p.opening__text {{message2}}
+            p.opening__text {{message3}}
+    script(src='./assets/js/lib/lib.js')
+    script(src='https://cdn.jsdelivr.net/npm/vue/dist/vue.js')
+    script(src='./assets/js/lib/vivus.js')
+    script(src='./assets/js/lib/lottie.js')
+    script(src='./assets/js/main.js')
+    script(src='./assets/js/bounce.js')
+    script.
+      var app = new Vue({
+        el: "#app",
+        data() {
+          return {
+            message1: "時は大転職時代。新メンバーは困難なニジボックスの面接にリモートから奇襲を仕掛け転職の勝利を収めた。",
+            message2: "更にその入社後、PCの環境設定を終え研修に入り込むことに成功。それは「新人研修」と呼ばれ既メンバーも多くの学びを得られるパワーを持つシステムだった。",
+            message3: "様々な課題に追われながら1ヶ月に渡って新メンバーは研修で得た知見を手に座学講座へと急いだ。研修を終え、案件に参画するために…"
+          }
+        }
+      });

@@ -1,0 +1,352 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote::before, blockquote::after,
+q::before, q::after {
+  content: "";
+  content: none;
+}
+
+a {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  color: #000;
+  text-decoration: none;
+  background-color: #ff9;
+}
+
+/* change colours to suit your needs */
+mark {
+  font-style: italic;
+  font-weight: bold;
+  color: #000;
+  background-color: #ff9;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  cursor: help;
+  border-bottom: 1px dotted;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  padding: 0;
+  margin: 1em 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+@font-face {
+  font-family: "space";
+  src: url("./font/851H-kktt_004.ttf") format("truetype");
+}
+body {
+  font-size: 62.5%;
+}
+
+@-webkit-keyframes welcome {
+  0% {
+    bottom: 50px;
+  }
+  30% {
+    bottom: 80px;
+  }
+  100% {
+    bottom: -350px;
+  }
+}
+
+@keyframes welcome {
+  0% {
+    bottom: 50px;
+  }
+  30% {
+    bottom: 80px;
+  }
+  100% {
+    bottom: -350px;
+  }
+}
+@-webkit-keyframes rocket {
+  0% {
+    bottom: 50px;
+  }
+  15% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 1000px;
+  }
+}
+@keyframes rocket {
+  0% {
+    bottom: 50px;
+  }
+  15% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 1000px;
+  }
+}
+@-webkit-keyframes bg-night-sky {
+  0% {
+    background-position-y: -826px;
+  }
+  15% {
+    background-position-y: -826px;
+  }
+  100% {
+    background-position-y: 0;
+  }
+}
+@keyframes bg-night-sky {
+  0% {
+    background-position-y: -826px;
+  }
+  15% {
+    background-position-y: -826px;
+  }
+  100% {
+    background-position-y: 0;
+  }
+}
+.top {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../image/night-sky.svg");
+  background-repeat: no-repeat;
+  background-position-x: -0.5px;
+  background-position-y: -826px;
+  background-size: cover;
+  -webkit-animation-name: bg-night-sky;
+          animation-name: bg-night-sky;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.vivus-welcome {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  z-index: 200;
+  width: 70%;
+  -webkit-animation-name: welcome;
+          animation-name: welcome;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.vivus-rocket {
+  position: absolute;
+  right: 80px;
+  bottom: 50px;
+  z-index: 200;
+  -webkit-animation-name: rocket;
+          animation-name: rocket;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#vivus-rocket {
+  width: 200px;
+}
+
+.st0 {
+  fill: none;
+  stroke: #000355;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  stroke-width: 10;
+}
+
+.st1 {
+  fill: none;
+  stroke: #000355;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+  stroke-width: 15;
+}
+
+.lottie {
+  position: absolute;
+  top: 250px;
+  right: 250px;
+  z-index: 300;
+  width: 100px;
+  height: 100px;
+}
+
+.planet {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  z-index: 300;
+  width: 250px;
+  height: 250px;
+}
+
+@-webkit-keyframes opening-scroll {
+  0% {
+    top: 600px;
+  }
+  100% {
+    top: -1300px;
+  }
+}
+
+@keyframes opening-scroll {
+  0% {
+    top: 600px;
+  }
+  100% {
+    top: -1300px;
+  }
+}
+.opening {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+  transform: perspective(100px) rotateX(10deg);
+}
+.opening__wrapper {
+  position: fixed;
+  top: 600px;
+  -webkit-animation-name: opening-scroll;
+          animation-name: opening-scroll;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  -webkit-animation-delay: 11s;
+          animation-delay: 11s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.opening__text {
+  font-family: "space", sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: #fff;
+}
+.opening__text:not(:first-of-type) {
+  margin-top: 30px;
+}
+
+.main {
+  position: absolute;
+  z-index: 100;
+  padding-top: 200px;
+  padding-left: 200px;
+}
+.main__block {
+  display: flex;
+  align-items: center;
+}
+.main__block:not(:first-of-type) {
+  margin-top: 50px;
+}
+.main__image {
+  width: 85px;
+  height: 85px;
+}
+.main__image:not(:first-of-type) {
+  margin-left: 20px;
+}
+.main__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 60px;
+  margin-left: 50px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 25px 25px;
+}
+.main__link:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.main__text {
+  font-size: 1.5rem;
+  color: #000035;
+}

@@ -1,0 +1,20 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "plugins": [
+    "jquery"
+  ],
+  "rules": {
+    "semi": "warn",
+    "no-mixed-operators": "warn",
+    "curly": "warn",
+    "quotes": ["warn", "single"],
+    "no-trailing-spaces": "warn"
+  }
+}
